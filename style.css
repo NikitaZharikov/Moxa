@@ -155,6 +155,7 @@ body {
 .about {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 120px;
 }
 
 .about-item-name {
@@ -180,4 +181,102 @@ body {
     letter-spacing: 0.56px;
     color: #161513;
     margin-top: 22px;
+}
+
+.about-item2 {
+    max-width: 612px;
+}
+
+.about-item-text-main {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 40px;
+    letter-spacing: 0.64px;
+    color: #161513;
+    margin-bottom: 36px;
+}
+
+.about-item-text-sub {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #161513;
+    margin-bottom: 28px;
+}
+
+.about-item-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-item-data-text-header {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #E94D35;
+}
+
+.about-item-data-text-span {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 32px;
+    letter-spacing: 0.48px;
+    color: #161513;
+}
+
+.stats {
+    display: flex;
+    margin-bottom: 120px;
+}
+
+.stats-item {
+    border: 2px solid #332F29;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 352px;
+    min-height: 152px;
+}
+
+body>main>section.stats.container>article:nth-child(2) {
+    background-color: #161513;
+}
+
+body>main>section.stats.container>article:nth-child(2)>h4 {
+    color: #FFFFFF;
+}
+
+body>main>section.stats.container>article:nth-child(2)>span {
+    color: #FFFFFF;
+}
+
+.stats-item-header {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    text-align: center;
+    color: #161513;
+}
+
+.stats-item-text {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+    color: #161513;
 }
