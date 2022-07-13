@@ -129,13 +129,15 @@ body {
 }
 
 .direction-line {
-    background-color: #161513;
+    background: #161513;
+    background-size: 100vw;
     min-height: 68px;
     display: flex;
     gap: 68px;
     align-items: center;
     justify-content: center;
     transform: rotate(-5deg);
+    margin-bottom: 140px;
 }
 
 .direction-line-item {
@@ -148,4 +150,34 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-item-name {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 32px;
+    letter-spacing: 0.48px;
+    color: #161513;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.about-item-heading {
+    max-width: 351px;
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.56px;
+    color: #161513;
+    margin-top: 22px;
 }
