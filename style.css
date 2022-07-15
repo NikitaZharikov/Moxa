@@ -10,6 +10,14 @@
     src: url(font/BaiJamjuree-Regular.ttf);
 }
 
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -17,6 +25,7 @@ a {
 ul {
     list-style: none;
 }
+
 
 body {
     background-color: #F2F1EF;
@@ -283,7 +292,9 @@ body>main>section.stats.container>article:nth-child(2)>span {
 
 .awards,
 .portfolio,
-.services {
+.services,
+.customer,
+.articles {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -292,7 +303,9 @@ body>main>section.stats.container>article:nth-child(2)>span {
 
 .awards-header,
 .portfolio-header,
-.services-header {
+.services-header,
+.customer-header,
+.articles-header {
     margin: 22px 0 9px 0;
     font-family: 'Bai Jamjuree';
     font-style: normal;
@@ -305,7 +318,8 @@ body>main>section.stats.container>article:nth-child(2)>span {
 
 .awards-span,
 .portfolio-span,
-.services-span {
+.services-span,
+.articles-span {
     font-family: 'Bai Jamjuree';
     font-style: normal;
     font-weight: 400;
@@ -317,7 +331,8 @@ body>main>section.stats.container>article:nth-child(2)>span {
     margin-bottom: 60px;
 }
 
-.awards-item {
+.awards-item,
+.articles-item {
     border: 2px solid #161513;
     padding: 38px 34px;
     display: flex;
@@ -327,7 +342,8 @@ body>main>section.stats.container>article:nth-child(2)>span {
     box-sizing: border-box;
 }
 
-.awards-item-number_text {
+.awards-item-number_text,
+.articles-item-number_text {
     display: flex;
     align-items: center;
     gap: 24px;
@@ -349,13 +365,16 @@ body>main>section.stats.container>article:nth-child(2)>span {
 }
 
 .awards-item-list,
-.portfolio-item-list {
+.portfolio-item-list,
+.articles-item-list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 24px;
 }
 
-.awards-item-text-header {
+.awards-item-text-header,
+.articles-item-text-header {
     font-family: 'Bai Jamjuree';
     font-style: normal;
     font-weight: 400;
@@ -440,4 +459,96 @@ body>main>section.portfolio.container>div>article:nth-child(2) {
 
 body>main>section.portfolio.container>div>article:nth-child(4) {
     flex-direction: row-reverse;
+}
+
+.services-item-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    row-gap: 40px;
+}
+
+.services-item {
+    box-sizing: border-box;
+    padding: 34px 49px 30px 34px;
+    max-width: 510px;
+    border: 2px solid #161513;
+}
+
+.services-item-header {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 40px;
+    letter-spacing: 0.64px;
+    color: #161513;
+    margin-bottom: 28px;
+}
+
+.services-item_text {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #161513;
+}
+
+.customer-list {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 32px;
+}
+
+.articles-item-text-direction_date {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+    color: #E94D35;
+}
+
+.articles-item-p {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #161513;
+    max-width: 440px;
+}
+
+.articles-item {
+    gap: 60px;
+}
+
+.articles-item-list-button {
+    background-color: #161513;
+    padding: 14px 0;
+    width: 100%;
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 60px;
+}
+
+.articles {
+    position: relative;
+}
+
+.articles::after {
+    content: url(img/star_sharp_big.svg);
+    position: absolute;
+    right: -413px;
+    bottom: 110px;
 }
